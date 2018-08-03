@@ -1,0 +1,26 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "chapter 2 guessing game json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tarahadler/wdft_assignments/tree/master/chapter_2"
+  },
+  "keywords": [
+    "chapter",
+    "2",
+    "guessing",
+    "game",
+    "brainstation"
+  ],
+  "author": "Tara Hadler",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  },
+  "devDependencies": {}
+}

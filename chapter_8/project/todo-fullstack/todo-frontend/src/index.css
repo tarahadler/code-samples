@@ -1,0 +1,69 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #4c4c4c;
+  background: #ffff31;
+}
+
+form {
+  margin: 1em; 
+}
+
+ul {
+  margin: 1em;
+}
+
+label {
+  padding: 0em 1em; 
+  color: #585800;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #cece00;
+}
+
+.btn {
+  background-color: #585800;
+  border-color: #585800;
+  color: white;
+  margin: 1em 0em 0em 0em; 
+
+}
+
+.btn-default {
+  margin: 0em 1em 0em 0em; 
+}
+
+.btn:hover {
+  background-color: #baba00;
+  border-color: #baba00;
+
+}
+
+.btn:focus {
+  background-color: #585800;;
+  border-color: #585800;
+  color: white;
+
+}
+
+.form-control {
+  margin: 1em 1em 0em 0em; 
+  background-color: #fffff5;
+
+}
+
+.special-dd {
+  background-color: #7f7f00;
+  border-color: #7f7f00;
+  margin: 0em 0em 0em 1em; 
+  color: white; 
+}
+
+.list-group-item {
+  background-color: #fffff5;
+}
+
+
+
+

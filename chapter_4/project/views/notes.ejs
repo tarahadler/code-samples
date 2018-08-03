@@ -1,0 +1,61 @@
+<!-- Tara's Notes: Working with  -->
+
+<!-- EXAMPLE 1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Your Friends</h1>
+    <h2> <%= friends.length %> </h2>
+    
+    <% for (let i = 0; i < friends.length; i++) { %>
+       <div>
+            <h3> <%= friends[i].username %> </h3>
+            <h4> <%= friends[i].spendingLimit %> </h4>
+           
+       </div>
+    <% } %>
+    
+</body>
+</html>
+
+
+
+<!-- EXAMPLE 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>COOL SHOPPING PROFILE HERE</h1>
+    <h1> <%= 'here is the page of ' + username %> </h1>
+    <p> <%= username + ' lives according to the philosophy ' + shoppingPhil %></p>
+
+    <!-- Starting in condition, only print if condition is True.  -->
+  <!--   <% if (spendingLimit > 900) { %>
+        <h2> gucci gang, that's a lotta dough </h2>
+    <% } else { %> 
+        <h2> sweet, let's go vintage shopping </h2>
+    <% } %> -->
+
+
+    <% if (role === "admin") { %>
+        <h2> You're an admin. </h2>
+        <button>DELETE ALL DATA</button>
+    <% } else { %> 
+        <h2> You're a customer. </h2>
+    <% } %>
+
+
+    
+</body>
+</html>

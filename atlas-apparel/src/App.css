@@ -1,0 +1,644 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('/webfonts/leaguespartan-bold.eot');
+    src: url('/webfonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('/webfonts/leaguespartan-bold.woff2') format('woff2'),
+         url('/webfonts/leaguespartan-bold.woff') format('woff'),
+         url('/webfonts/leaguespartan-bold.ttf') format('truetype'),
+         url('/webfonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+.h1,
+.h2,
+.h3, 
+.h4, 
+.h5, 
+.h6 {
+    font-family: 'League Spartan', serif;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 2.5rem;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a {
+    transition: 0.5s color ease;
+}
+
+.a-app-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {   
+    flex: 1 0 auto;
+    position: relative;      
+}
+
+.hero-container {
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+    z-index: 1;
+    max-width: 600px;
+}
+
+.hero-heading {
+    font-size: 56px;
+    color: white;
+}
+
+.hero-image-learn {
+    color: white;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;    
+    margin-bottom: 25px; 
+    padding-bottom: 50px; 
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.6)), url("/images/cotton-picker.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    width: 100vw; 
+}
+
+/* Utility Classes */
+.relative {
+    position: relative;
+}
+
+.black {
+    font-size: 16px;
+    color: black;
+    padding: 2px; 
+}
+.lightgrey {
+    font-size: 16px;
+    color: lightgrey;
+    padding: 2px; 
+}
+.pt-0 {
+    padding-top: 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.mt-4 {
+    margin-top: 40px;
+}
+
+.mt-5 {
+    margin-top: 50px;
+}
+
+.mt-30 {
+    margin-top: 300px;
+}
+
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.mb-3 {
+    margin-bottom: 30px;
+}
+
+.mb-4 {
+    margin-bottom: 40px;
+}
+
+.mb-5 {
+    margin-bottom: 50px;
+}
+
+.mb-30 {
+    margin-bottom: 300px;
+}
+
+.mr-2 {
+    margin-right: 20px;
+}
+.mr-3 {
+    margin-right: 30px;
+}
+
+.container-sm {
+    max-width: 497px;
+}
+
+.container-md {
+    max-width: 600px;
+}
+
+
+.full-width-image {
+    height: 100vh;
+    width: 100vw;  
+}
+
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 0;  
+    box-shadow: none;
+    opacity: .7;
+    transition: 0.5s opacity ease;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+
+.thumbnail > img {
+    max-width: 100%;    
+    height: auto; 
+}
+
+.button {
+    display: inline-flex;
+    align-items: flex-end;
+    padding: 12px 12px 8px;
+    background-color: white;
+    border: 2px solid #333;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'League Spartan', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    line-height: 1;
+    transition: 0.5s all ease;
+}
+
+.quick-btn {
+    display: inline-flex;
+    align-items: flex-end;
+    padding: 20px 20px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'League Spartan', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    line-height: 1;
+    transition: 0.5s background-color ease;
+}
+
+.modal-btn {
+    display: inline-flex;
+    align-items: flex-end;
+    padding: 12px 12px 8px;
+    margin-top: 5px; 
+    background-color: white;
+    border: 2px solid #333;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'League Spartan', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    line-height: 1;
+    transition: 0.5s all ease;
+}
+
+.modal-btn:hover {
+    background-color: #d4af37;
+}
+
+
+.quick-btn:hover {
+    color: white;
+    background-color: #d4af37;
+    text-decoration: none;
+}
+
+
+
+.button:hover {
+    color: black;
+    background-color: #d4af37;
+    border-color: black;
+    text-decoration: none;
+}
+
+
+
+.button-outline {
+    background-color: transparent;
+}
+
+.button-lg {
+    padding: 13px 36px 10px;
+    font-size: 14px;
+}
+
+.button img {
+    width: 14px;
+    margin-right: 10px;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* NAVS */
+/* Default */
+.a-navbar {
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    position: relative;
+    padding: 10px;
+}
+
+.a-brand {
+    margin: 0 auto;
+}
+
+.a-nav {
+    position: absolute;
+    top: 30px;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+.a-nav-link {
+    display: flex;
+    align-items: flex-end;
+    line-height: 1;
+    padding: 6px;
+    font-family: 'League Spartan', serif;
+    letter-spacing: 1px;
+    font-size: 10px;
+    text-transform: uppercase; 
+    color: #333;
+}
+.a-nav-link:hover {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.a-nav-link:focus {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.nav-icons {
+    width: 12px;   
+}
+
+#measuring-tool-icon {
+    width: 26px;   
+}
+
+.a-nav-link-text {
+    margin-left: 5px;
+}
+
+.menu-button {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    display: inline-block;
+    padding: 0 5px;
+    background-color: transparent;
+    border: 0; 
+}
+
+.menu-button img {
+    width: 24px;
+}
+
+
+.image-center-lg {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 25px; 
+    border: 1px solid #d4af37;
+}
+
+@media ( min-width: 500px ) {
+    .image-center-lg { 
+        width: 60vw;
+        margin-left: -30vw;
+        margin-right: -30vw;
+    }
+}
+
+/* Media Query of >500px */
+@media ( min-width: 500px ) {
+    .menu-button {
+        display: none;
+    }
+
+    .a-navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    .a-brand {
+        margin: 0;
+    }
+
+    .a-nav {
+        position: static;
+        display: flex !important;
+        align-items: flex-end;
+        margin-top: 0;    
+        margin-left: auto;
+        padding: 0;
+    }
+
+    .a-nav-link {
+        display: inline-block;
+    }
+
+    /* this rule style a navlink that follow a navlink */
+    .a-nav-link + .a-nav-link {
+        margin-left: 10px;
+    }
+
+    .a-nav-link-text {
+        display: none;
+    }
+    .nav-icons {
+        width: 20px;
+        padding-right: 4px; 
+        
+    }
+}
+
+.product-list-item {
+    /* Kind of like a mask; hides anythi*/
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    /* padding-top: 100%; */
+    padding-bottom: 120%;
+    position: relative;
+}
+
+.product-list-item-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-list-nav {
+    margin-bottom: 30px;
+}
+
+.product-list-nav li {
+    margin-bottom: 10px;
+}
+
+.product-nav {
+    display: flex;    
+    margin-bottom: 20px; 
+}
+
+.product-nav-link {
+    display: block;
+    color: #333;
+}
+
+.product-nav-link:hover {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.product-nav-link:focus {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.product-nav-link + .product-nav-link {
+    margin-left: 20px;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.product-score-grade {
+    font-family: 'League Spartan', serif;
+}
+
+.color-swatch {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #333;
+    /* This makes a div a circle */
+    border-radius: 50%;    
+    margin: 0 auto 4px;
+}
+
+.product-option-radio {
+    display: inline-block;
+}
+
+.product-option-radio + .product-option-radio {
+    margin-left: 10px;
+}
+
+.product-option-radio label {
+    width: 16px;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+
+.form-control {
+    box-shadow: none;
+    border: 2px solid #333;
+    border-radius: 0;
+    outline: none;
+    outline-color: transparent !important;
+}
+
+/* https://stackoverflow.com/a/20547506/3735046 
+Apply colour to LABEL that is the sibling that FOLLOWS the checked input.*/
+.product-option-radio input[type="radio"]:checked ~ label{
+    border-bottom-color: #333;
+}
+
+.product-option-radio input {
+    display: none;
+}
+
+.mini-image {
+    width: 30px;
+    height: 40px;
+    margin: 5px; 
+}
+
+.mini-image-lg-gallery {
+    width: 60px;
+    height: 40px;
+    margin: 5px; 
+}
+
+.product_explorer {
+    border: 1px solid purple;
+}
+
+.glide__track {
+    position: relative;
+}
+
+.glide-lookbook .glide-bullets {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    flex-direction: column;
+}
+
+.cta-1 {
+    height: 300px; 
+    color: white;
+    background-color: #504f4f;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+
+footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: small;    
+    background-color: goldenrod;
+    color: white; 
+    padding: 40px 0;
+}
+
+footer a {
+    color: white; 
+}
+
+footer a:hover {
+    color: #333333; 
+    text-decoration: none;
+}
+
+.footer-logo {
+    max-width: 200px;
+    margin-top: 25px;
+}
+
+.footer-heading {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.footer-nav li {
+    margin-bottom: 10px;
+}
+
+.glide__slides {
+    margin-bottom: 0;
+}
+
+.glide-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.glide-arrow {
+    padding: 0;
+    margin: 0 3px;
+    background-color: transparent;
+    border: 0;
+}
+
+.glide-bullets {
+    display: flex;
+    justify-content: center;
+}
+
+.glide-bullet {
+    padding: 0;
+    margin: 0 3px;
+    background-color: transparent;
+    border: 0;    
+}
+
+a,
+button {
+    outline: none;
+    outline-color: transparent !important;
+    /* text-decoration: none; */
+}
+
+a:hover {
+    text-decoration: none;
+    color: #d4af37;
+}
+
+a:focus {
+    text-decoration: none;
+    color: #d4af37;
+}
+
+.glide{position:relative;width:100%;box-sizing:border-box}.glide *{box-sizing:inherit}.glide__track{overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}.glide__slides--dragging{user-select:none}.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:initial;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows{-webkit-touch-callout:none;user-select:none}.glide__bullets{-webkit-touch-callout:none;user-select:none}.glide--rtl{direction:rtl}
+.glide__arrow{position:absolute;display:block;top:50%;z-index:2;color:white;text-transform:uppercase;padding:9px 12px;background-color:transparent;border:2px solid rgba(255,255,255,0.5);border-radius:4px;box-shadow:0 0.25em 0.5em 0 rgba(0,0,0,0.1);text-shadow:0 0.25em 0.5em rgba(0,0,0,0.1);opacity:1;cursor:pointer;transition:opacity 150ms ease, border 300ms ease-in-out;transform:translateY(-50%);line-height:1}.glide__arrow:focus{outline:none}.glide__arrow:hover{border-color:white}.glide__arrow--left{left:2em}.glide__arrow--right{right:2em}.glide__arrow--disabled{opacity:0.33}.glide__bullets{position:absolute;z-index:2;bottom:2em;left:50%;display:inline-flex;list-style:none;transform:translateX(-50%)}.glide__bullet{background-color:rgba(255,255,255,0.5);width:9px;height:9px;padding:0;border-radius:50%;border:2px solid transparent;transition:all 300ms ease-in-out;cursor:pointer;line-height:0;box-shadow:0 0.25em 0.5em 0 rgba(0,0,0,0.1);margin:0 0.25em}.glide__bullet:focus{outline:none}.glide__bullet:hover,.glide__bullet:focus{border:2px solid white;background-color:rgba(255,255,255,0.5)}.glide__bullet--active{background-color:white}.glide--swipeable{cursor:grab;cursor:-moz-grab;cursor:-webkit-grab}.glide--dragging{cursor:grabbing;cursor:-moz-grabbing;cursor:-webkit-grabbing}

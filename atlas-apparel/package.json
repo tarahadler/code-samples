@@ -1,0 +1,28 @@
+{
+  "name": "atlas-apparel",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@glidejs/glide": "^3.0.4",
+    "bootstrap": "^3.3.7",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-bootstrap": "^0.32.1",
+    "react-burger-menu": "^2.5.0",
+    "react-dom": "^16.4.0",
+    "react-google-maps": "^9.4.5",
+    "react-icons": "^2.2.7",
+    "react-lazy-hero": "^0.4.0",
+    "react-photo-gallery": "^6.0.27",
+    "react-router-dom": "^4.2.2",
+    "react-router-transition": "^1.2.1",
+    "react-scripts": "1.1.4",
+    "recompose": "^0.27.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

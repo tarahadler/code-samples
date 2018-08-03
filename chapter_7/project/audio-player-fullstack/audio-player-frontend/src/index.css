@@ -1,0 +1,70 @@
+/* Main Elements & Containers */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: lighter;
+  background: #333333;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../public/record-bg.jpg');
+  /*Note: background-position can conflict w/ background-size when set to "cover"*/
+  /*background-position: center center;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+  min-height: 100vh;
+}
+
+p, h1, h3 {
+  color: whitesmoke;
+}
+
+h4 {
+  color: #f0a412;
+}
+
+.App {
+  padding: 5em;
+}
+
+.Sub {
+  padding: 1em;
+
+}
+
+/* Song Links (to Details) */
+.hover:hover h4 {
+  color: #dff913; 
+}
+
+a.hover:hover {
+  text-decoration: none;
+}
+
+/* Buttons */
+button {
+  padding: 0em 1em 0em 1em;  
+}
+
+button#Home {
+  display: block;
+  background-color: lightgrey;
+  margin: 2em 2em 2em 0em;
+}
+
+button#Home a {
+  color: black; 
+  text-decoration: none;
+}
+
+button#Home:hover {
+  background-color: #dff913; 
+}
+
+/* Extra */
+.glyphicon {
+  padding: 0em 1em 0em 1em; 
+}
+
+
+
+

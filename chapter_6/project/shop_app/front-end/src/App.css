@@ -1,0 +1,91 @@
+h1, h2, h3, h4, h5, h6, a, ul {
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
+h5 {
+  margin-top: 2em; 
+}
+
+ul {
+  -webkit-padding-start: 15px;
+  list-style-type: square;
+  color: #333333;
+}
+
+button.pull-left.btn.btn-default {
+  padding: 5px; 
+  font-size: 8pt; 
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  background: salmon;
+  color: white;
+  text-shadow: none; 
+  border-style: none;
+  border-radius: 0px; 
+}
+
+
+button.btn.btn-default {
+  height: 34px;
+  padding: 5px; 
+  font-size: 10pt; 
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  background: salmon;
+  color: white;
+  text-shadow: none; 
+  border-style: solid;
+  border-radius: 0px; 
+}
+
+input.form-control {
+  border-radius: 0px; 
+  font-size: 10pt; 
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
+.App-header {
+  background-color: #333333;
+  height: 150px;
+  padding: 20px;
+  color: salmon;
+}
+
+.App-header span {
+  color: hotpink;
+}
+
+img {
+  width: 20vw;
+  height: auto;
+}
+
+.main-nav {
+  background-color: #222222;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  color: darkgray;
+  padding: 10px 10px 10px 0px;
+}
+
+a:hover {
+  color: salmon;
+  text-decoration: none;
+}
+
+a:focus {
+  color: darkgray;
+  text-decoration: none;
+}
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

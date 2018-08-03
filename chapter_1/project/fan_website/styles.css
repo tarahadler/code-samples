@@ -1,0 +1,92 @@
+body {
+    background-color: whitesmoke; 
+}
+
+h1, h2, h3, h4, h5 {
+    color: #7B6524;
+}
+
+img {
+    margin-bottom: 30px; 
+}
+
+.pic {
+    display: block;
+    margin: 25px 0px;
+}
+
+.row {
+    margin: 20px;
+}
+
+.bgphoto {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('images/record-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    padding: 5vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.specialnav {
+    padding-top: 35vh;
+    position: static;  
+    text-transform: uppercase;
+}
+
+.normalnav {
+    background-color: whitesmoke;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    position: static;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: #7B6524;
+}
+
+/*
+CASCADING STYLE SHEETS - NOTES 
+ONE ELEMENT
+.nav-link.disabled {
+    color: #BEA05B;
+}
+
+NESTED
+.nav-link .disabled {
+    color: #BEA05B;
+}
+
+TWO SEPARATE ELEMENTS (could be nested or not)
+NESTED
+.nav-link, .disabled {
+    color: #BEA05B;
+}
+
+*/
+
+.nav-link.disabled {
+    color: #BEA05B;
+}
+
+.nav-link:hover, .nav-link.disabled:hover {
+    color: gainsboro;  
+}
+
+.ticket-link {
+    color: #7B6524;  
+}
+
+.ticket-link:hover {
+    color: hotpink; 
+    text-decoration: none;    
+}
+
+.textbox {
+    padding: 50px 150px;
+}
